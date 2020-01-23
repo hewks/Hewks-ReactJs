@@ -18,3 +18,7 @@ a:focus,
 a:active {
   outline: 0;
 }
+
+body {
+  overflow: hidden;
+}
