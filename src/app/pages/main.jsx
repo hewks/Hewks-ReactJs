@@ -15,6 +15,8 @@ export default class Main extends React.Component {
       wrapperText:
         "Queremos que tu empresa crezca como nunca antes, por esto te ofrecemos las mejores herramientas de este siglo."
     };
+
+    this.icon = ["fab fa-github"];
   }
 
   render() {
@@ -24,7 +26,8 @@ export default class Main extends React.Component {
           image={wrapperBackground}
           title={this.state.wrapperTitle}
           text={this.state.wrapperText}
-          hoverTrack={true}
+          iconsAnim={true}
+          icons={this.icons}
         />
         {/** Photo by Zan on Unsplash */}
       </div>
