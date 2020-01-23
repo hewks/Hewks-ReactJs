@@ -1,0 +1,10 @@
+.hw-big-wrapper {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: calc(100vh - 70px);
+}
+
+.hw-big-wrapper.hw-fixed {
+  background-attachment: fixed;
+}

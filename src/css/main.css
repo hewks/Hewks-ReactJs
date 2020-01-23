@@ -6,3 +6,15 @@
   box-sizing: border-box;
   font-family: "Roboto Mono", monospace;
 }
+
+a {
+  text-decoration: none;
+  color: black;
+  outline: 0;
+}
+
+a:hover,
+a:focus,
+a:active {
+  outline: 0;
+}
