@@ -1,17 +1,21 @@
 .hw-page-loader {
   height: 100vh;
+  max-height: 0;
   width: 100vw;
-  z-index: 9999999;
-  position: fixed;
+  z-index: 99999;
+  position: absolute;
   top: 0;
   left: 0;
-  display: none;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
+  transition: all 0.5s ease;
+  background: white;
 }
 .hw-page-loader.hw-active-page-loader {
-  display: flex;
+  max-height: 100vh;
 }
 .hw-page-loader > .hw-loader-info {
   width: 200px;
