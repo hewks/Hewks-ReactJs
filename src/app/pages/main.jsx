@@ -7,6 +7,12 @@ import "./../../css/pages.css";
 
 import wrapperBackground from "./../../assets/img/1.jpg";
 
+class Abilities extends React.Component {
+  render() {
+    return <div className="hw-abilities"></div>;
+  }
+}
+
 export default class Main extends React.Component {
   constructor(props) {
     super(props);
@@ -32,6 +38,7 @@ export default class Main extends React.Component {
         />
         {/** Photo by Zan on Unsplash */}
         <Services />
+        <Abilities />
       </div>
     );
   }
