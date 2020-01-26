@@ -36,7 +36,6 @@ export default class Services extends React.Component {
             text={
               "Diseñamos, administramos y optimizamos su pagina web. Con ella sus clientes podran apreciar sus productos y servicios de una manera optima y rapida."
             }
-            onClick={this.hola}
           />
 
           <Service
@@ -45,7 +44,6 @@ export default class Services extends React.Component {
             text={
               "Nuestro equipo fotografico y de diseño captura de manera ideal su marca y sus productos, de esta manera sus clientes mantendran la imagen correcta de su empresa."
             }
-            onClick={this.hola}
           />
           <Service
             image={softwareDev}
@@ -53,7 +51,6 @@ export default class Services extends React.Component {
             text={
               "Proponemos estrategia de marketing para que su negocio crezca al ritmo de la tecnologia."
             }
-            onClick={this.hola}
           />
         </div>
       </div>
