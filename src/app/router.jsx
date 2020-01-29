@@ -47,6 +47,7 @@ export default class Router extends React.Component {
                 <Link to="/servicios">Servicios</Link>
                 <Link to="/protafolio">Portafolio</Link>
                 <Link to="/proyectos">Proyectos</Link>
+                <Link to="/clientes">Clientes</Link>
                 <Link to="/contacto">Contacto</Link>
                 <div className="hw-social">
                   <a
@@ -71,6 +72,7 @@ export default class Router extends React.Component {
               <Link to="/servicios">Servicios</Link>
               <Link to="/protafolio">Portafolio</Link>
               <Link to="/proyectos">Proyectos</Link>
+              <Link to="/clientes">Clientes</Link>
               <Link to="/contacto">Contacto</Link>
               <div className="hw-social">
                 <a

@@ -7,9 +7,23 @@ import "./../../css/pages.css";
 
 import wrapperBackground from "./../../assets/img/1.jpg";
 
+class Ability extends React.Component {
+  render() {
+    return <span className={this.props.icon}> </span>;
+  }
+}
+
 class Abilities extends React.Component {
   render() {
-    return <div className="hw-abilities"></div>;
+    return (
+      <div className="hw-abilities">
+        <Ability icon="fas fa-github" />
+        <Ability icon="fas fa-php" />
+        <Ability icon="fas fa-js" />
+        <Ability icon="fas fa-nodejs" />
+        <Ability icon="fas fa-reactjs" />
+      </div>
+    );
   }
 }
 
