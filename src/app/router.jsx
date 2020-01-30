@@ -7,6 +7,7 @@ import "./../assets/css/comp/navigation.css";
 import Loader from "./comp/loader.jsx";
 import Navigation from "./comp/navigation.jsx";
 import Main from "./pages/main.jsx";
+import Footer from "./comp/footer.jsx";
 
 export default class Router extends React.Component {
   constructor(props) {
@@ -28,6 +29,7 @@ export default class Router extends React.Component {
               <Main />
             </Route>
           </div>
+          <Footer />
         </div>
       </BrowserRouter>
     );

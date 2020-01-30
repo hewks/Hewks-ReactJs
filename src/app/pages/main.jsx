@@ -22,7 +22,7 @@ export default class Main extends React.Component {
 
   render() {
     return (
-      <div className="hw-intern-page">
+      <div className="hw-page">
         <Big
           image={wrapperBackground}
           title={this.state.wrapperTitle}
