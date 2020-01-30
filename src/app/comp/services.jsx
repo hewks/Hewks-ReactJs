@@ -29,6 +29,7 @@ export default class Services extends React.Component {
   render() {
     return (
       <div className="hw-services-container">
+        <h4 className="hw-services-title">Nuestros servicios</h4>
         <div className="hw-services">
           <Service
             image={softwareDev}
