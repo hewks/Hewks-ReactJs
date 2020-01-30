@@ -5,7 +5,35 @@ import "./../../assets/css/comp/services.css";
 
 import softwareDev from "./../../assets/img/2.jpg";
 
-class Service extends React.Component {
+export class ShowServices extends React.Component {
+  render() {
+    return (
+      <div className="hw-services-show">
+        <Show image={softwareDev} title={"Desarrollo web"} />
+        <Show image={softwareDev} title={"Creacion de contenido audiovisual"} />
+        <Show image={softwareDev} title={"Marketing Digital"} />
+        <Show image={softwareDev} title={"Administracion de redes sociales"} />
+        <Show image={softwareDev} title={"Desarrollo de software"} />
+      </div>
+    );
+  }
+}
+
+export class Show extends React.Component {
+  render() {
+    return (
+      <div
+        className="hw-show"
+        style={{ backgroundImage: "url(" + this.props.image + ")" }}
+      >
+        <div className="hw-info">{this.props.title}</div>
+        <div className="hw-black-cover"></div>
+      </div>
+    );
+  }
+}
+
+export class Service extends React.Component {
   render() {
     return (
       <div className="hw-service">
@@ -25,7 +53,7 @@ class Service extends React.Component {
   }
 }
 
-export default class Services extends React.Component {
+export class Services extends React.Component {
   render() {
     return (
       <div className="hw-services-container">

@@ -1,7 +1,7 @@
 import React from "react";
 
 import { Big } from "./../comp/wrapper.jsx";
-import Services from "./../comp/services.jsx";
+import { Services } from "./../comp/services.jsx";
 
 import "./../../assets/css/pages.css";
 

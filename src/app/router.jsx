@@ -7,6 +7,7 @@ import "./../assets/css/comp/navigation.css";
 import Loader from "./comp/loader.jsx";
 import Navigation from "./comp/navigation.jsx";
 import Main from "./pages/main.jsx";
+import Servicios from "./pages/servicios.jsx";
 import Footer from "./comp/footer.jsx";
 
 export default class Router extends React.Component {
@@ -27,6 +28,9 @@ export default class Router extends React.Component {
           <div className="hw-intern-page">
             <Route path="/" exact>
               <Main />
+            </Route>
+            <Route path="/servicios" exact>
+              <Servicios />
             </Route>
           </div>
           <Footer />
