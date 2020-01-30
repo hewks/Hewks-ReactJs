@@ -21,5 +21,18 @@ a:active {
 
 body {
   overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+body.hw-active-body {
   overflow-y: scroll;
+}
+
+.hw-page-container {
+  overflow: hidden;
+}
+
+.hw-page-container.hw-active-page-container {
+  overflow-y: scroll;
+  overflow-x: hidden;
 }

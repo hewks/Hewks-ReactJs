@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import "./../../css/comp/services.css";
+import "./../../assets/css/comp/services.css";
 
 import softwareDev from "./../../assets/img/2.jpg";
 

@@ -1,6 +1,6 @@
 import React from "react";
 
-import "./../../css/comp/wrapper.css";
+import "./../../assets/css/comp/wrapper.css";
 
 export class Big extends React.Component {
   componentDidMount() {

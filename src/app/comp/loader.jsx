@@ -1,5 +1,5 @@
 import React from "react";
-import "./../../css/comp/loader.css";
+import "./../../assets/css/comp/loader.css";
 
 export default class Loader extends React.Component {
   constructor(props) {
@@ -49,6 +49,8 @@ export default class Loader extends React.Component {
   }
 
   end() {
+    const body = document.getElementsByTagName("body")[0];
+    body.classList.add("hw-active-body");
     this.loader.container.current.classList.remove(this.loader.active);
   }
 

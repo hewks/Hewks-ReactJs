@@ -3,29 +3,9 @@ import React from "react";
 import { Big } from "./../comp/wrapper.jsx";
 import Services from "./../comp/services.jsx";
 
-import "./../../css/pages.css";
+import "./../../assets/css/pages.css";
 
 import wrapperBackground from "./../../assets/img/1.jpg";
-
-class Ability extends React.Component {
-  render() {
-    return <span className={this.props.icon}> </span>;
-  }
-}
-
-class Abilities extends React.Component {
-  render() {
-    return (
-      <div className="hw-abilities">
-        <Ability icon="fas fa-github" />
-        <Ability icon="fas fa-php" />
-        <Ability icon="fas fa-js" />
-        <Ability icon="fas fa-nodejs" />
-        <Ability icon="fas fa-reactjs" />
-      </div>
-    );
-  }
-}
 
 export default class Main extends React.Component {
   constructor(props) {
@@ -52,7 +32,6 @@ export default class Main extends React.Component {
         />
         {/** Photo by Zan on Unsplash */}
         <Services />
-        <Abilities />
       </div>
     );
   }

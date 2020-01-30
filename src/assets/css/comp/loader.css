@@ -3,7 +3,7 @@
   max-height: 0;
   width: 100vw;
   z-index: 99999;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   display: flex;
