@@ -84,7 +84,9 @@
 }
 
 .hw-footer > .hw-footer-sec.hw-footer-info > .hw-links > .hw-i > span > a {
-  color: blue;
+  color: black;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 
 .hw-footer > .hw-footer-sec.hw-footer-info > .hw-links > .hw-i > .hw-social {
