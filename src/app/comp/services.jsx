@@ -9,11 +9,41 @@ export class ShowServices extends React.Component {
   render() {
     return (
       <div className="hw-services-show">
-        <Show image={softwareDev} title={"Desarrollo web"} />
-        <Show image={softwareDev} title={"Creacion de contenido audiovisual"} />
-        <Show image={softwareDev} title={"Marketing Digital"} />
-        <Show image={softwareDev} title={"Administracion de redes sociales"} />
-        <Show image={softwareDev} title={"Desarrollo de software"} />
+        <h4 className="hw-services-title">Nuestros servicios</h4>
+        <Show
+          image={softwareDev}
+          title={"Desarrollo web"}
+          page={"desarrolloweb"}
+          text={"Creación, diseño y administración de paginas web."}
+        />
+        <Show
+          image={softwareDev}
+          title={"Creación de contenido audiovisual"}
+          page={"contenidoaudiovisual"}
+          text={
+            "Edicion de videos, creacion de publicidad y toma de fotografias."
+          }
+        />
+        <Show
+          image={softwareDev}
+          title={"Marketing Digital"}
+          page={"marketingdigital"}
+          text={
+            "Diseño de estrategias y metodos para alcanzar un mayor numero de personas."
+          }
+        />
+        <Show
+          image={softwareDev}
+          title={"Administracion de redes sociales"}
+          page={"socialnetwork"}
+          text={"Instagram, Facebook, Google+, Youtube, Pinterest."}
+        />
+        <Show
+          image={softwareDev}
+          title={"Desarrollo de software"}
+          page={"desarrollosoftware"}
+          text={"Creacion y estructuracion de aplicaciones empresariales."}
+        />
       </div>
     );
   }
@@ -22,13 +52,18 @@ export class ShowServices extends React.Component {
 export class Show extends React.Component {
   render() {
     return (
-      <div
+      <Link
+        to={this.props.page}
         className="hw-show"
         style={{ backgroundImage: "url(" + this.props.image + ")" }}
       >
-        <div className="hw-info">{this.props.title}</div>
-        <div className="hw-black-cover"></div>
-      </div>
+        <div className="hw-black-cover">
+          <span>{this.props.text}</span>
+        </div>
+        <div className="hw-bottom">
+          <span>{this.props.title}</span>
+        </div>
+      </Link>
     );
   }
 }
