@@ -44,6 +44,26 @@ export class ShowServices extends React.Component {
           page={"desarrollosoftware"}
           text={"Creacion y estructuracion de aplicaciones empresariales."}
         />
+        <Show
+          image={softwareDev}
+          title={"Administracion de bases de datos"}
+          page={"databaseadmin"}
+          text={"Creación, control y administración en MySQL y MongoDB"}
+        />
+        <Show
+          image={softwareDev}
+          title={"Creación de APIs"}
+          page={"creacionapi"}
+          text={
+            "Estructuración y construcción de APIs para hacer peticiones al backend."
+          }
+        />
+        <Show
+          image={softwareDev}
+          title={"Estructuración de Backend"}
+          page={"creacionbackend"}
+          text={"Creación de plataformas backend en PHP Y NodeJs"}
+        />
       </div>
     );
   }
@@ -104,16 +124,9 @@ export class Services extends React.Component {
 
           <Service
             image={softwareDev}
-            alt={"Contenido audiovisual"}
+            alt={"Bases de datos."}
             text={
-              "Nuestro equipo fotografico y de diseño captura de manera ideal su marca y sus productos, de esta manera sus clientes mantendran la imagen correcta de su empresa."
-            }
-          />
-          <Service
-            image={softwareDev}
-            alt={"Marketing digital"}
-            text={
-              "Proponemos estrategia de marketing para que su negocio crezca al ritmo de la tecnologia."
+              "Creacion, administracion y analisis de bases de datos SQL (MySQL) Y NoSQL (MongoDB)."
             }
           />
         </div>
