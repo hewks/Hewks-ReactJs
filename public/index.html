@@ -30,7 +30,7 @@
     <title>Hewks</title>
 
     <!--links-->
-    <link rel="stylesheet" href="./vendor/fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="./src/vendor/fontawesome/css/all.min.css" />
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
@@ -45,53 +45,6 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-    <script>
-      class toback {
-        constructor() {
-          this.info = {
-            ip: "",
-            appName: "",
-            appCodeName: "",
-            appVersion: "",
-            language: "",
-            platform: "",
-            userAgent: "",
-            date: ""
-          };
-
-          this.getInfo();
-        }
-
-        async getIp() {
-          const req = await fetch("https://api.ipify.org?format=json");
-          const res = await req.json();
-          this.info.ip = res.ip;
-        }
-
-        async getInfo() {
-          await this.getIp();
-          this.info.appName = navigator.appName;
-          this.info.appCodeName = navigator.appCodeName;
-          this.info.appVersion = navigator.appVersion;
-          this.info.language = navigator.language;
-          this.info.platform = navigator.platform;
-          this.info.userAgent = navigator.userAgent;
-          this.info.date = new Date();
-          this.sendInfo();
-        }
-
-        async sendInfo() {
-          const req = await fetch("http://192.168.0.20:4500/fronts", {
-            method: "POST",
-            body: JSON.stringify(this.info),
-            headers: {
-              "Content-Type": "application/json"
-            }
-          });
-        }
-      }
-
-      //new toback();
-    </script>
+    <script src="./src/js/tobackhewks.js"></script>
   </body>
 </html>
