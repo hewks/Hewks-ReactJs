@@ -8,6 +8,7 @@ import Loader from "./comp/loader.jsx";
 import Navigation from "./comp/navigation.jsx";
 import Main from "./pages/main.jsx";
 import Servicios from "./pages/servicios.jsx";
+import Portafolio from "./pages/portafolio.jsx";
 import Footer from "./comp/footer.jsx";
 
 export default class Router extends React.Component {
@@ -31,6 +32,9 @@ export default class Router extends React.Component {
             </Route>
             <Route path="/servicios" exact>
               <Servicios />
+            </Route>
+            <Route path="/portafolio" exact>
+              <Portafolio />
             </Route>
           </div>
           <Footer />

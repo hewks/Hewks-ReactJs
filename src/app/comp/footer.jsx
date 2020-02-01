@@ -12,7 +12,7 @@ export default class Footer extends React.Component {
           <div className="hw-links">
             <Link to="/">Inicio</Link>
             <Link to="/servicios">Servicios</Link>
-            <Link to="/protafolio">Portafolio</Link>
+            <Link to="/portafolio">Portafolio</Link>
             <Link to="/proyectos">Proyectos</Link>
             <Link to="/contacto">Contacto</Link>
           </div>

@@ -35,7 +35,7 @@ export default class Navigation extends React.Component {
           <div className="hw-links">
             <Link to="/">Inicio</Link>
             <Link to="/servicios">Servicios</Link>
-            <Link to="/protafolio">Portafolio</Link>
+            <Link to="/portafolio">Portafolio</Link>
             <Link to="/proyectos">Proyectos</Link>
             <Link to="/contacto">Contacto</Link>
             <div className="hw-social">
@@ -59,7 +59,7 @@ export default class Navigation extends React.Component {
         <div className="hw-left-navigation" ref={this.leftNav}>
           <Link to="/">Inicio</Link>
           <Link to="/servicios">Servicios</Link>
-          <Link to="/protafolio">Portafolio</Link>
+          <Link to="/portafolio">Portafolio</Link>
           <Link to="/proyectos">Proyectos</Link>
           <Link to="/contacto">Contacto</Link>
           <div className="hw-social">
