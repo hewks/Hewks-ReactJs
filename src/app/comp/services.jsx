@@ -1,92 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+import "../../assets/css/comp/portfolio.css";
 import "./../../assets/css/comp/services.css";
 
-import softwareDev from "./../../assets/img/2.jpg";
-
-export class ShowServices extends React.Component {
-  render() {
-    return (
-      <div className="hw-services-show">
-        <h4 className="hw-services-title">Nuestros servicios</h4>
-        <Show
-          image={softwareDev}
-          title={"Desarrollo web"}
-          page={"desarrolloweb"}
-          text={"Creación, diseño y administración de paginas web."}
-        />
-        <Show
-          image={softwareDev}
-          title={"Creación de contenido audiovisual"}
-          page={"contenidoaudiovisual"}
-          text={
-            "Edicion de videos, creacion de publicidad y toma de fotografias."
-          }
-        />
-        <Show
-          image={softwareDev}
-          title={"Marketing Digital"}
-          page={"marketingdigital"}
-          text={
-            "Diseño de estrategias y metodos para alcanzar un mayor numero de personas."
-          }
-        />
-        <Show
-          image={softwareDev}
-          title={"Administracion de redes sociales"}
-          page={"socialnetwork"}
-          text={"Instagram, Facebook, Google+, Youtube, Pinterest."}
-        />
-        <Show
-          image={softwareDev}
-          title={"Desarrollo de software"}
-          page={"desarrollosoftware"}
-          text={"Creacion y estructuracion de aplicaciones empresariales."}
-        />
-        <Show
-          image={softwareDev}
-          title={"Administracion de bases de datos"}
-          page={"databaseadmin"}
-          text={"Creación, control y administración en MySQL y MongoDB"}
-        />
-        <Show
-          image={softwareDev}
-          title={"Creación de APIs"}
-          page={"creacionapi"}
-          text={
-            "Estructuración y construcción de APIs para hacer peticiones al backend."
-          }
-        />
-        <Show
-          image={softwareDev}
-          title={"Estructuración de Backend"}
-          page={"creacionbackend"}
-          text={"Creación de plataformas backend en PHP Y NodeJs"}
-        />
-      </div>
-    );
-  }
-}
-
-export class Show extends React.Component {
-  render() {
-    return (
-      <Link
-        to={this.props.page}
-        className="hw-show"
-        style={{ backgroundImage: "url(" + this.props.image + ")" }}
-      >
-        <div className="hw-black-cover">
-          <span>{this.props.text}</span>
-        </div>
-        <div className="hw-bottom">
-          <span>{this.props.title}</span>
-        </div>
-      </Link>
-    );
-  }
-}
+import audiovisualContImg from "./../../assets/img/3.jpg";
+import webDevelopImg from "./../../assets/img/4.jpg";
+import digitalMarkImg from "./../../assets/img/5.jpg";
+import softwareDevImg from "./../../assets/img/8.jpg";
+import databaseImg from "./../../assets/img/6.jpg";
+import linuxServersImg from "./../../assets/img/7.jpg";
 
 export class Service extends React.Component {
   render() {
@@ -115,7 +38,7 @@ export class Services extends React.Component {
         <h4 className="hw-services-title">Nuestros servicios</h4>
         <div className="hw-services">
           <Service
-            image={softwareDev}
+            image={webDevelopImg}
             alt={"Desarrollo web"}
             text={
               "Diseñamos, administramos y optimizamos su pagina web. Con ella sus clientes podran apreciar sus productos y servicios de una manera optima y rapida."
@@ -123,12 +46,210 @@ export class Services extends React.Component {
           />
 
           <Service
-            image={softwareDev}
-            alt={"Bases de datos."}
+            image={digitalMarkImg}
+            alt={"Marketing digital."}
             text={
-              "Creacion, administracion y analisis de bases de datos SQL (MySQL) Y NoSQL (MongoDB)."
+              "Formulamos estrategias digitales para que tu empresa crezca por medio de las redes sociales."
             }
           />
+        </div>
+        <div className="hw-show-more-services">
+          <h5>Quieres ver todos nuestros servicios?</h5>
+          <Link to="/servicios">Ver todos los servicios</Link>
+        </div>
+      </div>
+    );
+  }
+}
+
+export class ShowServices extends React.Component {
+  render() {
+    return (
+      <div className="hw-portfolio">
+        <div className="hw-works">
+          <div className="hw-work">
+            <div
+              className="hw-work-image"
+              style={{ backgroundImage: "url(" + webDevelopImg + ")" }}
+            ></div>
+            <div className="hw-work-info">
+              <div className="hw-info-container">
+                <h4 className="hw-title">Diseño y desarrollo de paginas web</h4>
+                <p>
+                  Diseñamos tu sitio web pensando en la escalabilidad, de esta
+                  manera tu plataforma podra crecer al igual que tu empresa.
+                </p>
+                <p>Creamos y administramos tu sitio web.</p>
+                <div className="hw-abilities">
+                  <h5>Habilidades</h5>
+                  <ul className="hw-abil">
+                    <li>PHP</li>
+                    <li>JavaScript</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Wordpress</li>
+                    <li>Codeigniter</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="hw-work">
+            <div
+              className="hw-work-image"
+              style={{ backgroundImage: "url(" + softwareDevImg + ")" }}
+            ></div>
+            <div className="hw-work-info">
+              <div className="hw-info-container">
+                <h4 className="hw-title">Desarrollo de software</h4>
+                <p>
+                  Diseñamos software especializado para automatizar y controlar
+                  el funcionamiento de tu empresa.
+                </p>
+                <p>
+                  Ahorra tiempo y dinero invirtiendo en software para tu
+                  empresa.
+                </p>
+                <div className="hw-abilities">
+                  <h5>Habilidades</h5>
+                  <ul className="hw-abil">
+                    <li>
+                      Plataformas Desktop
+                      <ul>
+                        <li>Python</li>
+                        <li>Java</li>
+                      </ul>
+                    </li>
+                    <li>
+                      Plataformas web
+                      <ul>
+                        <li>Javascript</li>
+                        <li>ReactJs</li>
+                        <li>ElectronJs</li>
+                        <li>NodeJs</li>
+                        <li>PHP</li>
+                        <li>Codeigniter</li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="hw-work">
+            <div
+              className="hw-work-image"
+              style={{ backgroundImage: "url(" + audiovisualContImg + ")" }}
+            ></div>
+            <div className="hw-work-info">
+              <div className="hw-info-container">
+                <h4 className="hw-title">Creacion de contenido audiovisual</h4>
+                <p>
+                  Fotografia a productos, Fotografia de escenarios, creacion de
+                  videos publicitarios, creacion de videos sobre eventos.
+                </p>
+                <div className="hw-abilities">
+                  <h5>Habilidades</h5>
+                  <ul className="hw-abil">
+                    <li>Fotograf&iacute;a.</li>
+                    <li>Edici&oacute;n de imagenes.</li>
+                    <li>Fotografia de eventos.</li>
+                    <li>Creacion de videos sobre eventos.</li>
+                    <li>Edicion de Videos.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="hw-work">
+            <div
+              className="hw-work-image"
+              style={{ backgroundImage: "url(" + digitalMarkImg + ")" }}
+            ></div>
+            <div className="hw-work-info">
+              <div className="hw-info-container">
+                <h4 className="hw-title">Marketing Digital</h4>
+                <p>
+                  Formulamos estrategias digitales para que tu empresa crezca
+                  por medio de las redes sociales.
+                </p>
+                <div className="hw-abilities">
+                  <h5>Habilidades</h5>
+                  <ul className="hw-abil">
+                    <li>Outbound Marketing.</li>
+                    <li>Inbound Marketing.</li>
+                    <li>Uso de herramientas publicitarias.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="hw-work">
+            <div
+              className="hw-work-image"
+              style={{ backgroundImage: "url(" + databaseImg + ")" }}
+            ></div>
+            <div className="hw-work-info">
+              <div className="hw-info-container">
+                <h4 className="hw-title">
+                  Administraci&oacute;n de bases de datos.
+                </h4>
+                <p>
+                  Administramos, controlamos y centralizamos todas su
+                  informacion usando sistemas para la creacion de bases de
+                  datos.
+                </p>
+                <div className="hw-abilities">
+                  <h5>Habilidades</h5>
+                  <ul className="hw-abil">
+                    <li>
+                      Bases de datos SQL
+                      <ul>
+                        <li>MySQL</li>
+                        <li>PostgreSQL</li>
+                      </ul>
+                    </li>
+                    <li>
+                      Bases de datos NoSQL
+                      <ul>
+                        <li>MongoDB</li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="hw-work">
+            <div
+              className="hw-work-image"
+              style={{ backgroundImage: "url(" + linuxServersImg + ")" }}
+            ></div>
+            <div className="hw-work-info">
+              <div className="hw-info-container">
+                <h4 className="hw-title">Administracion de servidores</h4>
+                <p>
+                  Creacion y administracion de servidores Linux en instancias
+                  EC2, manejo de cerficados SSL y construccion de entornos
+                  basados en docker containers.
+                </p>
+                <div className="hw-abilities">
+                  <h5>Habilidades</h5>
+                  <ul className="hw-abil">
+                    <li>Linux</li>
+                    <li>SSL</li>
+                    <li>AWS</li>
+                    <li>Ubuntu</li>
+                    <li>Docker</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="hw-proyects">
+            <h5>Quieres participar en nuestros proyectos?</h5>
+            <Link to="/proyectos">Ver todos los proyectos</Link>
+          </div>
         </div>
       </div>
     );
