@@ -1,7 +1,7 @@
 import React from "react";
 
 import { Big } from "./../comp/wrapper.jsx";
-import { Services } from "./../comp/services.jsx";
+import { MiniServices } from "./../comp/services.jsx";
 
 import "./../../assets/css/pages.css";
 
@@ -31,7 +31,7 @@ export default class Main extends React.Component {
           icons={this.icons}
         />
         {/** Photo by Zan on Unsplash */}
-        <Services />
+        <MiniServices />
       </div>
     );
   }

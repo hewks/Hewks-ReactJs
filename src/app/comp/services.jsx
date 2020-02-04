@@ -11,7 +11,13 @@ import softwareDevImg from "./../../assets/img/8.jpg";
 import databaseImg from "./../../assets/img/6.jpg";
 import linuxServersImg from "./../../assets/img/7.jpg";
 
-export class Service extends React.Component {
+/**
+ *
+ * Show services
+ *
+ */
+
+export class MiniService extends React.Component {
   render() {
     return (
       <div className="hw-service">
@@ -22,7 +28,7 @@ export class Service extends React.Component {
         <div className="hw-service-info">
           <h4>{this.props.alt}</h4>
           <p>{this.props.text}</p>
-          <Link to="/services">
+          <Link to="/servicios">
             <span className="fas fa-search-plus"></span>
           </Link>
         </div>
@@ -31,13 +37,13 @@ export class Service extends React.Component {
   }
 }
 
-export class Services extends React.Component {
+export class MiniServices extends React.Component {
   render() {
     return (
       <div className="hw-services-container">
         <h4 className="hw-services-title">Nuestros servicios</h4>
         <div className="hw-services">
-          <Service
+          <MiniService
             image={webDevelopImg}
             alt={"Desarrollo web"}
             text={
@@ -45,7 +51,7 @@ export class Services extends React.Component {
             }
           />
 
-          <Service
+          <MiniService
             image={digitalMarkImg}
             alt={"Marketing digital."}
             text={
@@ -62,7 +68,7 @@ export class Services extends React.Component {
   }
 }
 
-export class ShowServices extends React.Component {
+export class AllServices extends React.Component {
   render() {
     return (
       <div className="hw-portfolio">

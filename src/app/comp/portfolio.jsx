@@ -38,7 +38,7 @@ import lightThree from "./../../assets/img/portfolio/luces_3.jpg";
 import lightFour from "./../../assets/img/portfolio/luces_4.jpg";
 import lightFive from "./../../assets/img/portfolio/luces_5.jpg";
 
-export class Total extends React.Component {
+export class Portfolio extends React.Component {
   componentDidMount() {
     const allWorkbuttons = document.querySelectorAll(".hw-show-more");
     const activeClass = "hw-active-show-more-container";
@@ -212,6 +212,9 @@ export class Total extends React.Component {
             ></div>
           </div>
 
+          {/**
+           * Proyects button
+           */}
           <div className="hw-proyects">
             <h5>Quieres ver en que estamos trabajando? </h5>
             <Link to="/proyectos">Ver todos los proyectos</Link>
