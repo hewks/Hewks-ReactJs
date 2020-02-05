@@ -47,23 +47,23 @@ export class PrivateProjects extends React.Component {
             title={"desarrollo de software"}
             image={softwareDevImg}
             texts={[
-              <p>
+              <p key="1">
                 Diseñamos software especializado para automatizar y controlar el
                 funcionamiento de tu empresa.
               </p>,
-              <p>
+              <p key="2">
                 Ahorra tiempo y dinero invirtiendo en software para tu empresa.
               </p>
             ]}
             abilities={[
-              <li>
+              <li key="1">
                 Plataformas Desktop
                 <ul>
                   <li>Python</li>
                   <li>Java</li>
                 </ul>
               </li>,
-              <li>
+              <li key="2">
                 Plataformas web
                 <ul>
                   <li>Javascript</li>
@@ -94,23 +94,23 @@ export class PublicProjects extends React.Component {
             title={"desarrollo de software"}
             image={softwareDevImg}
             texts={[
-              <p>
+              <p key="1">
                 Diseñamos software especializado para automatizar y controlar el
                 funcionamiento de tu empresa.
               </p>,
-              <p>
+              <p key="2">
                 Ahorra tiempo y dinero invirtiendo en software para tu empresa.
               </p>
             ]}
             abilities={[
-              <li>
+              <li key="1">
                 Plataformas Desktop
                 <ul>
                   <li>Python</li>
                   <li>Java</li>
                 </ul>
               </li>,
-              <li>
+              <li key="2">
                 Plataformas web
                 <ul>
                   <li>Javascript</li>

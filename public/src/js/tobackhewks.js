@@ -1,3 +1,7 @@
+/**
+ * Envio de datos al backend de hewks
+ */
+
 class toback {
   constructor() {
     this.info = {
@@ -8,10 +12,20 @@ class toback {
       language: "",
       platform: "",
       userAgent: "",
-      date: ""
+      date: "",
+      load: ""
     };
 
-    this.getInfo();
+    this.date = {
+      init: new Date().getTime(),
+      start: new Date()
+    };
+
+    window.addEventListener("DOMContentLoaded", () => {
+      this.date.end = new Date().getTime();
+      this.info.load = this.date.end - this.date.start;
+      this.getInfo();
+    });
   }
 
   async getIp() {
@@ -33,7 +47,7 @@ class toback {
   }
 
   async sendInfo() {
-    const req = await fetch("http://192.168.0.20:4500/fronts", {
+    await fetch("http://192.168.0.20:4500/fronts", {
       method: "POST",
       body: JSON.stringify(this.info),
       headers: {
