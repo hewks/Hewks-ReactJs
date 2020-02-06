@@ -1,0 +1,83 @@
+.hw-form {
+  width: 90%;
+  max-width: 500px;
+}
+
+.hw-form > .hw-form-group {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 18px;
+}
+
+.hw-form > .hw-form-group > label {
+  font-weight: lighter;
+  font-size: 18px;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.hw-form > .hw-form-group > input {
+  height: 40px;
+  width: 100%;
+  border: 0;
+  border-radius: 0;
+  border-bottom: 1px solid grey;
+  padding: 0 10px;
+}
+
+/**
+ * Contact form 
+ */
+
+.hw-contact-form {
+  padding-top: 45px;
+}
+
+.hw-contact-form > h4 {
+  font-size: 26px;
+  font-weight: lighter;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.hw-contact-form > small {
+  width: 90%;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.hw-contact-form > small > a {
+  font-weight: bold;
+}
+
+.hw-contact-form > .hw-form {
+  margin: 0 auto;
+  margin-bottom: 60px;
+}
+
+.hw-contact-form > .hw-form > .hw-submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hw-contact-form > .hw-form > .hw-submit > button {
+  width: 200px;
+  background: rgb(54, 145, 230);
+  color: white;
+  height: 30px;
+  border-radius: 5px;
+  border: 0;
+  margin-top: 20px;
+}
+
+@media screen and (min-width: 770px) {
+  .hw-contact-form > .hw-form {
+    margin-top: 35px;
+  }
+}
