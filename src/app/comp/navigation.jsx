@@ -37,6 +37,13 @@ export default class Navigation extends React.Component {
             <Link to="/servicios">Servicios</Link>
             <Link to="/portafolio">Portafolio</Link>
             <Link to="/proyectos">Proyectos</Link>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://localhost:3001"
+            >
+              Clientes
+            </a>
             <Link to="/contacto">Contacto</Link>
             <div className="hw-social">
               <a
@@ -61,6 +68,13 @@ export default class Navigation extends React.Component {
           <Link to="/servicios">Servicios</Link>
           <Link to="/portafolio">Portafolio</Link>
           <Link to="/proyectos">Proyectos</Link>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://localhost:3001"
+          >
+            Clientes
+          </a>
           <Link to="/contacto">Contacto</Link>
           <div className="hw-social">
             <a

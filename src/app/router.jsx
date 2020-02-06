@@ -10,6 +10,7 @@ import Main from "./pages/main.jsx";
 import Servicios from "./pages/servicios.jsx";
 import Portafolio from "./pages/portafolio.jsx";
 import Proyectos from "./pages/proyectos.jsx";
+import Contacto from "./pages/contacto.jsx";
 import Footer from "./comp/footer.jsx";
 
 export default class Router extends React.Component {
@@ -39,6 +40,9 @@ export default class Router extends React.Component {
             </Route>
             <Route path="/proyectos" exact>
               <Proyectos />
+            </Route>
+            <Route path="/contacto" exact>
+              <Contacto />
             </Route>
           </div>
           <Footer />
