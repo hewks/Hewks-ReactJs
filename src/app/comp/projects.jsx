@@ -92,7 +92,7 @@ export class PrivateProjects extends React.Component {
               </p>
             ]}
             abilities={[
-              <ul>
+              <ul key="1">
                 <li>ECommerce</li>
                 <li>Javascript</li>
                 <li>PHP</li>
@@ -113,7 +113,7 @@ export class PrivateProjects extends React.Component {
               </p>
             ]}
             abilities={[
-              <ul>
+              <ul key="1">
                 <li>ECommerce</li>
                 <li>Javascript</li>
                 <li>PHP</li>
@@ -140,7 +140,7 @@ export class PrivateProjects extends React.Component {
               </p>
             ]}
             abilities={[
-              <ul>
+              <ul key="1">
                 <li>ECommerce</li>
                 <li>Javascript</li>
                 <li>PHP</li>
