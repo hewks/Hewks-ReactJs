@@ -30,19 +30,19 @@ export default class Router extends React.Component {
           <Navigation />
           <div className="hw-intern-page">
             <Route path="/" exact>
-              <Main />
+              <Main lang={this.state.lang} />
             </Route>
             <Route path="/servicios" exact>
-              <Servicios />
+              <Servicios lang={this.state.lang} />
             </Route>
             <Route path="/portafolio" exact>
-              <Portafolio />
+              <Portafolio lang={this.state.lang} />
             </Route>
             <Route path="/proyectos" exact>
-              <Proyectos />
+              <Proyectos lang={this.state.lang} />
             </Route>
             <Route path="/contacto" exact>
-              <Contacto />
+              <Contacto lang={this.state.lang} />
             </Route>
           </div>
           <Footer />

@@ -127,7 +127,7 @@ export class Contact extends React.Component {
         <h4>Contacto</h4>
         <small>
           Despues de que envies tus datos nos pondremos en contacto contigo.
-          Tambien puedes llamarnos al{" "}
+          Tambien puedes llamar o enviar un mensaje al{" "}
           <a rel="noopener noreferrer" target="_blank" href="tel:+573134148698">
             (+57) 3124148698
           </a>

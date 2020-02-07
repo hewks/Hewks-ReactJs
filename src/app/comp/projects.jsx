@@ -124,33 +124,53 @@ export class PrivateProjects extends React.Component {
               </ul>
             ]}
           />
-          <Private
-            title={"Restaurante la 72"}
+          {/*<Private
+            title={"Hewks Link"}
             image={softwareDevImg}
             texts={[
               <p key="1">
-                Plataforma para el control de pedidos locales por medio de
-                aplicacion web. Integracion con backend para el control de datos
-                y el manejo de peticiones por parte de la aplicacion de
-                domicilios.
+                Software para el control de paginas web, enlace con cliente
+                backend que administra los datos de cada pagina web por
+                separado.
               </p>,
               <p key="2">
-                Manejo de estadisticas, estadisticas, clientes, nomina,
-                domicilios y administradores.
+                Script que recolecta datos importantes de las paginas web
+                suministradas o conectadas a Hewks.net
               </p>
             ]}
             abilities={[
               <ul key="1">
-                <li>ECommerce</li>
                 <li>Javascript</li>
-                <li>PHP</li>
-                <li>Codeigniter</li>
-                <li>Wordpress</li>
-                <li>CSS</li>
+                <li>NodeJs</li>
+                <li>ExpressJs</li>
+                <li>ReactJs</li>
+                <li>MongoDB</li>
                 <li>HTML</li>
+                <li>CSS</li>
               </ul>
             ]}
-          />
+          />*/}
+          {/*<Private
+            title={"Hewks Proyects"}
+            image={softwareDevImg}
+            texts={[
+              <p key="1">
+                Plataforma para desarrolladores novatos. Su principal
+                funci&oacute;n ser&aacute; permitir el acceso de desarrolladores
+                a proyectos pequeños y grandes.
+              </p>,
+              <p key="2">
+                Script que recolecta datos importantes de las paginas web
+                suministradas o conectadas a Hewks.net
+              </p>
+            ]}
+            abilities={[
+              <ul key="1">
+                <li>OpenSource</li>
+                <li>Developers</li>
+              </ul>
+            ]}
+          />*/}
         </div>
       </div>
     );

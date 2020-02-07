@@ -21,6 +21,20 @@ export default class Main extends React.Component {
   }
 
   render() {
+    var services = [];
+
+    switch (this.props.lang) {
+      case "es":
+        services = require("../../assets/lang/es/services/mini.jsx").default;
+        break;
+      case "en":
+        services = require("../../assets/lang/es/services/mini.jsx").default;
+        break;
+      default:
+        services = require("../../assets/lang/es/services/mini.jsx").default;
+        break;
+    }
+
     return (
       <div className="hw-page">
         <Big
@@ -31,7 +45,7 @@ export default class Main extends React.Component {
           icons={this.icons}
         />
         {/** Photo by Zan on Unsplash */}
-        <MiniServices />
+        <MiniServices services={services} />
       </div>
     );
   }
