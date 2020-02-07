@@ -41,7 +41,7 @@
   position: absolute;
   color: black;
   font-size: 18px;
-  display: none;
+  display: flex;
   justify-content: center;
   align-items: center;
   right: 0;
@@ -52,10 +52,6 @@
   width: 30px;
   height: 30px;
   border-radius: 50%;
-}
-
-.hw-icons-container > .hw-wrapper-icon.hw-icon-move {
-  display: flex;
 }
 
 .hw-icons-container > .hw-icon-move:nth-child(1) {
