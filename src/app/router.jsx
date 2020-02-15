@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Route } from "react-router-dom";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 import "./../assets/css/main.css";
 import "./../assets/css/comp/navigation.css";
@@ -29,21 +29,23 @@ export default class Router extends React.Component {
           <Loader lang={this.state.lang} />
           <Navigation />
           <div className="hw-intern-page">
-            <Route path="/" exact>
-              <Main lang={this.state.lang} />
-            </Route>
-            <Route path="/servicios" exact>
-              <Servicios lang={this.state.lang} />
-            </Route>
-            <Route path="/portafolio" exact>
-              <Portafolio lang={this.state.lang} />
-            </Route>
-            <Route path="/proyectos" exact>
-              <Proyectos lang={this.state.lang} />
-            </Route>
-            <Route path="/contacto" exact>
-              <Contacto lang={this.state.lang} />
-            </Route>
+            <Switch>
+              <Route path="/" exact>
+                <Main lang={this.state.lang} />
+              </Route>
+              <Route path="/servicios" exact>
+                <Servicios lang={this.state.lang} />
+              </Route>
+              <Route path="/portafolio" exact>
+                <Portafolio lang={this.state.lang} />
+              </Route>
+              <Route path="/proyectos" exact>
+                <Proyectos lang={this.state.lang} />
+              </Route>
+              <Route path="/contacto" exact>
+                <Contacto lang={this.state.lang} />
+              </Route>
+            </Switch>
           </div>
           <Footer />
         </div>
