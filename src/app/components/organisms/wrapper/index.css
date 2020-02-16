@@ -4,6 +4,7 @@
   background-size: cover;
   height: calc(100vh - 70px);
   overflow: hidden;
+  position: relative;
 }
 
 .hw-wrapper.hw-fixed {
@@ -34,6 +35,13 @@
   text-align: left;
   width: 85%;
   margin-bottom: 45px;
+}
+
+.hw-icons-container {
+  position: absolute;
+  height: 100%;
+  background: transparent;
+  width: 100%;
 }
 
 .hw-wrapper-icon {

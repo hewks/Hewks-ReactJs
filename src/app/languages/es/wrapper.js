@@ -5,8 +5,13 @@ const wrapper = {
   title: "Hewks",
   text:
     "Queremos que tu empresa crezca como nunca antes, por esto te ofrecemos las mejores herramientas de este siglo.",
-  icons: ["fab fa-github"],
-  anim: true
+  anim: true,
+  icons: [
+    "hw-wrapper-icon fab fa-react",
+    "hw-wrapper-icon fab fa-node-js",
+    "hw-wrapper-icon fab fa-aws",
+    "hw-wrapper-icon fab fa-js"
+  ]
 };
 
 export default wrapper;

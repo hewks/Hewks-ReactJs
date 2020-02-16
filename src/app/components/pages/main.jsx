@@ -22,6 +22,8 @@ export default class Main extends React.Component {
           text={wrapper.text}
           image={wrapper.image}
           title={wrapper.title}
+          icons={wrapper.icons}
+          anim={wrapper.anim}
         />
       </div>
     );
