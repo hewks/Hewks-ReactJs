@@ -9,8 +9,9 @@ const socialLinks = props => {
   if (validateProps(props, keys)) {
     return (
       <div className="hw-social">
-        {props.links.map(link => (
+        {props.links.map((link, index) => (
           <A
+            key={index + link.type + link.href}
             type={link.type}
             href={link.href}
             text={<Icon name={link.icon} />}

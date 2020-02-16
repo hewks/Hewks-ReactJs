@@ -1,7 +1,8 @@
 import React from "react";
+import { searchError } from "./../../../../assets/lang/es/errors";
 
 const Error = props => {
-  return <p>Error</p>;
+  return <p>{searchError(props.id)}</p>;
 };
 
 export default Error;
