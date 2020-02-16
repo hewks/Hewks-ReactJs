@@ -4,7 +4,10 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import "./../assets/css/main.css";
 
 import Loader from "./comp/loader.jsx";
-import Main from "./pages/main.jsx";
+/**
+ * Pages
+ */
+import Main from "./components/pages/main";
 import Servicios from "./pages/servicios.jsx";
 import Portafolio from "./pages/portafolio.jsx";
 import Proyectos from "./pages/proyectos.jsx";
