@@ -1,6 +1,6 @@
 import React from "react";
 import Info from "../../molecules/info";
-import GroupIcons from "../../molecules/GroupIcons";
+import GroupIcons from "../../molecules/groupIcons";
 
 import "./index.css";
 
