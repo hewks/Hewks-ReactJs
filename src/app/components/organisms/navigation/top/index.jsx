@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Toggler from "./../../molecules/toggler";
-import LinkGroup from "./../../molecules/linkGroup/linkGroup";
-import SocialLinks from "../../molecules/socialLinks/socialLinks";
+import Toggler from "../../../molecules/toggler";
+import GroupLinks from "../../../molecules/groupLinks";
+import GroupSocial from "../../../molecules/groupSocial";
 
 import "./index.css";
 
@@ -13,8 +13,8 @@ export default class TopNavigation extends React.Component {
         <Link to="/">Hewks</Link>
         <Toggler onTogglerClick={this.props.onTogglerClick} />
         <div className="hw-links">
-          <LinkGroup links={this.props.navLinks} />
-          <SocialLinks links={this.props.socialLinks} />
+          <GroupLinks links={this.props.navLinks} />
+          <GroupSocial links={this.props.socialLinks} />
         </div>
       </div>
     );

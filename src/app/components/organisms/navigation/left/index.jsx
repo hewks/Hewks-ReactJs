@@ -1,6 +1,6 @@
 import React from "react";
-import LinkGroup from "../../molecules/linkGroup/linkGroup";
-import SocialLinks from "../../molecules/socialLinks/socialLinks";
+import GroupLinks from "../../../molecules/groupLinks";
+import GroupSocial from "../../../molecules/groupSocial";
 
 import "./index.css";
 
@@ -14,8 +14,8 @@ export default class LeftNavigation extends React.Component {
   render() {
     return (
       <div className="hw-left-navigation" ref={this.leftNav}>
-        <LinkGroup links={this.props.navLinks} />
-        <SocialLinks links={this.props.socialLinks} />
+        <GroupLinks links={this.props.navLinks} />
+        <GroupSocial links={this.props.socialLinks} />
       </div>
     );
   }

@@ -1,6 +1,6 @@
 import React from "react";
-import TopNavigation from "../topNavigation";
-import LeftNavigation from "../leftNavigation";
+import TopNavigation from "./top";
+import LeftNavigation from "./left";
 
 export default class Navigation extends React.Component {
   constructor(props) {
