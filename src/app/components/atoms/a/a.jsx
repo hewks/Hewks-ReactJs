@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const A = props => {
   switch (props.type) {
@@ -11,6 +12,12 @@ const A = props => {
         >
           {props.text !== undefined ? props.text : "notext"}
         </a>
+      );
+    case "react":
+      return (
+        <Link to={props.href !== undefined ? props.href : "nohref"}>
+          {props.text !== undefined ? props.text : "notext"}
+        </Link>
       );
     default:
       break;
