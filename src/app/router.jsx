@@ -22,57 +22,27 @@ export default class Router extends React.Component {
   }
 
   render() {
-    const socialLinks = [
-      {
-        type: "blank",
-        href: "https://github.com/hewks",
-        icon: "fab fa-github"
-      },
-      {
-        type: "blank",
-        href: "https://instagram.com/hewks_net",
-        icon: "fab fa-instagram"
-      }
-    ];
+    var navigation = {};
 
-    const navLinks = [
-      {
-        type: "react",
-        href: "/",
-        text: "Inicio"
-      },
-      {
-        type: "react",
-        href: "/servicios",
-        text: "Servicios"
-      },
-      {
-        type: "react",
-        href: "/portafolio",
-        text: "Portafolio"
-      },
-      {
-        type: "react",
-        href: "/proyectos",
-        text: "Proyectos"
-      },
-      {
-        type: "blank",
-        href: "https://localhost:3001",
-        text: "Clientes"
-      },
-      {
-        type: "react",
-        href: "/contacto",
-        text: "Contacto"
-      }
-    ];
+    switch (this.state.lang) {
+      case "es":
+        navigation = require("./languages/es/navigation");
+        break;
+      case "en":
+        navigation = require("./languages/en/navigation");
+        break;
+      default:
+        break;
+    }
 
     return (
       <BrowserRouter>
         <div className="hw-page-container">
           <Loader lang={this.state.lang} />
-          <Navigation socialLinks={socialLinks} navLinks={navLinks} />
+          <Navigation
+            socialLinks={navigation.default.socialLinks}
+            navLinks={navigation.default.navLinks}
+          />
           <div className="hw-intern-page">
             <Switch>
               <Route path="/" exact>
