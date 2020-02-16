@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import SocialLinks from "../components/molecules/socialLinks/socialLinks";
 
 export default class Navigation extends React.Component {
   constructor(props) {
@@ -25,6 +26,19 @@ export default class Navigation extends React.Component {
   }
 
   render() {
+    const socialLinks = [
+      {
+        type: "blank",
+        href: "https://github.com/hewks",
+        icon: "fab fa-github"
+      },
+      {
+        type: "blank",
+        href: "https://instagram.com/hewks_net",
+        icon: "fab fa-instagram"
+      }
+    ];
+
     return (
       <div className="hw-navigation">
         <div className="hw-top-navigation">
@@ -45,22 +59,7 @@ export default class Navigation extends React.Component {
               Clientes
             </a>
             <Link to="/contacto">Contacto</Link>
-            <div className="hw-social">
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://www.github.com/ctrlprogrammer"
-              >
-                <span className="fab fa-github"></span>
-              </a>
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://www.instagram.com/hewks_net"
-              >
-                <span className="fab fa-instagram"></span>
-              </a>
-            </div>
+            <SocialLinks links={socialLinks} />
           </div>
         </div>
         <div className="hw-left-navigation" ref={this.leftNav}>
@@ -76,22 +75,7 @@ export default class Navigation extends React.Component {
             Clientes
           </a>
           <Link to="/contacto">Contacto</Link>
-          <div className="hw-social">
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://www.github.com/ctrlprogrammer"
-            >
-              <span className="fab fa-github"></span>
-            </a>
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://www.instagram.com/hewks_net"
-            >
-              <span className="fab fa-instagram"></span>
-            </a>
-          </div>
+          <SocialLinks links={socialLinks} />
         </div>
       </div>
     );
