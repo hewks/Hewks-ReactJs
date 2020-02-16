@@ -18,6 +18,7 @@ export default class Main extends React.Component {
     return (
       <div className="hw-page">
         <Wrapper
+          titleSize={4}
           text={wrapper.text}
           image={wrapper.image}
           title={wrapper.title}

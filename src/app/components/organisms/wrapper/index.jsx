@@ -1,6 +1,5 @@
 import React from "react";
-import P from "../../atoms/p";
-import Title from "../../atoms/title";
+import Info from "../../molecules/info";
 import Icon from "../../atoms/icon/icon";
 
 import "./index.css";
@@ -14,10 +13,11 @@ export default class Wrapper extends React.Component {
           backgroundImage: "url(" + this.props.image + ")"
         }}
       >
-        <div className="hw-wrapper-info">
-          <Title size={4} title={this.props.title} />
-          <P text={this.props.text} />
-        </div>
+        <Info
+          titleSize={this.props.titleSize}
+          title={this.props.title}
+          text={this.props.text}
+        />
         <div className="hw-icons-container">
           <Icon name="hw-wrapper-icon fab fa-react" />
           <Icon name="hw-wrapper-icon fab fa-node-js" />
