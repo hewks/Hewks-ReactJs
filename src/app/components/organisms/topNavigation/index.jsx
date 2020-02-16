@@ -4,6 +4,8 @@ import Toggler from "./../../molecules/toggler";
 import LinkGroup from "./../../molecules/linkGroup/linkGroup";
 import SocialLinks from "../../molecules/socialLinks/socialLinks";
 
+import "./index.css";
+
 export default class TopNavigation extends React.Component {
   render() {
     return (

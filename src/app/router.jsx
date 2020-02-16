@@ -2,7 +2,6 @@ import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 import "./../assets/css/main.css";
-import "./../assets/css/comp/navigation.css";
 
 import Loader from "./comp/loader.jsx";
 import Main from "./pages/main.jsx";
